@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+aside {
+    background: #57A2FE;
+}
+
+.logo {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.logo img {
+    height: 106px;
+    vertical-align: middle;
+    width: 149.02px;
+}
+
+.logo p {
+    color: #181C44;
+    display: inline-block;
+    font-family: 'Bauhaus 93';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    left: -46px;
+    line-height: 80px;
+    position: relative;
+    vertical-align: middle;
+}
+
+aside nav ul li {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+aside nav ul li button {
+    background-color: #57A2FE;
+}
+
+aside nav ul li button img {
+    height: 40px;
+    vertical-align: middle;
+    width: 40px;
+}
+
+aside nav ul li button p {
+    color: #181C44;
+    display: inline;
+    font-family: 'Cera Pro';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118%;
+    vertical-align: middle;
+}
+
+.log-out {
+    background: #B1DC1C;
+    border: 4px solid #B1DC1C;
+    border-radius: 30px;    
+    box-shadow: 0px 4px 5px rgba(177, 220, 28, 0.25);
+    color: #181C44;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    height: 45px;
+    line-height: 29px;
+    width: 220px;
+}
