@@ -108,6 +108,7 @@ input, select {
   }
 
 body {
+    background: #F1F7FF;
     width: 1920px;
 }
 
@@ -230,7 +231,8 @@ header nav .registration {
 
 .test-section-1 {
     background: #BCE903;
-    border-radius: 10px;
+    box-shadow: inset -5px 5px 2px rgba(177, 220, 28, 0.05), inset -15px 15px 30px rgba(177, 220, 28, 0.08), inset -50px 50px 80px rgba(177, 220, 28, 0.15);
+    border-radius: 5px;
 }
 
 .test-section-2 {
@@ -242,50 +244,66 @@ header nav .registration {
 }
 
 .demonstrations {
-    margin-top: 152px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 90px 220px 0 250px;
+    grid-column-gap: 286xp;
+    grid-row-gap: 140px;
 }
 
-.demonstration img {
+.demonstration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.demonstration .demo-img {
+    border: 10px solid #A2C037BF;
+    border-radius: 10px;
     position: relative;
     display: inline-block;
-    width: 480px;
-    height: 254px;
+    width: 630px;
+    height: 320px;
+    justify-self: end;
 }
 
-.demonstration span {
+.demonstration .org {
+    color: #181C44;
     position: relative;
     display: inline-block;
     font-family: 'Cera Pro';
     font-style: normal;
     font-weight: 900;
-    font-size: 42px;
-    line-height: 53px;
-    margin-left: 250px;
+    font-size: 56px;
+    line-height: 70px;
     vertical-align: top;
-    text-decoration: underline;
 }
 
-.demonstration-1 span {
-    color: #FCA311;
-    margin-right: 613px;
+.demonstration .add-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    color: #181C44;
+    margin-top: 5px;
 }
 
-.demonstration-2 span {
-    color: #A2C037;
-    margin-right: 664px;
+.demonstration-2 .add-text {
+    margin-top: 50px;
 }
 
-.demonstration-3 span {
-    color: #014394;
-    margin-right: 480px;
+.demonstration-1 .alt {
+    color: orange;
 }
 
-.demonstration-2 {
-    margin-top: 437px;
+.demonstration-2 .alt {
+    color: #BCE903;
 }
 
-.demonstration-3 {
-    margin-top: 437px;
+.demonstration-3 .alt {
+    color: #1F83FD;
 }
 
 .tests {
@@ -294,72 +312,55 @@ header nav .registration {
     padding-top: 64px;
 }
 
-.tests-text {
-    font-family: 'Cera Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 59px;
-    letter-spacing: 0.01em;
-    color: #FFFFFF;
-    margin-left: 227px;
+.tests-information {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 
-.tests ul {
-    margin-left: 230px;
-    margin-top: 77px;
+.tests-information li {
+    width: 300px;
 }
 
-.tests ul li {
-    display: inline-block;
-    width: 335px;
-    height: 540px;
-    border-radius: 50px;
-    background-color: white;
-    border: 5px solid #FCA311;
-    vertical-align: top;
-    margin-bottom: 80px;
-    /* box-shadow: inset 5px -5px 10px #FCA311; */
+.tests-information li div img {
+    margin: 0 auto;
 }
 
-.test-1 {
-    margin-right: 228px;
-}
-
-.test-2 {
-    margin-right: 228px;
-}
-
-.tests ul li div img {
-    width: 325px;
-    height: 250px;
-    border-radius: 50px 50px 0px 0px;
-}
-
-.tests ul li div div h3 {
+.tests-information li div h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    margin-left: 40px;
+    color: #FFFFFF;
+    margin-top: 65px;
 }
 
-.tests ul li div div h3 {
-    margin-top: 30px;
-}
-
-.tests ul li div div h3 span {
-    color: #FCA311;
-}
-
-.tests ul li div div p {
+.tests-information li div p {
+    display: inline-block;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
-    margin: 25px 43px 98px;
+    color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 130px;
+}
+
+.tests-information li div h3 span {
+    color: #FCA311;
+}
+
+.tests-text {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-left: 227px;
 }
 
 .tests-text span {
@@ -375,9 +376,9 @@ header nav .registration {
     font-family: 'Cera Pro';
     font-style: normal;
     font-weight: 900;
-    font-size: 42px;
+    font-size: 56px;
     line-height: 59px;
-    color: #014394;
+    color: #181C44;
     margin-left: 231px;
 }
 
@@ -385,17 +386,9 @@ header nav .registration {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 175px;
-}
-
-.about-team ul li img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-}
+}   
 
 .about-team ul li p {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -403,9 +396,19 @@ header nav .registration {
     line-height: 25px;
 }
 
+.about-team ul li img {
+    margin-top: 30px;
+}
+
 .about-team ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
     margin-top: 230px;
-    margin-left: 298px;
+}
+
+.role {
+    color: #1F83FD;
 }
 
 footer {
